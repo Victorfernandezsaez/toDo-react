@@ -1,14 +1,14 @@
-export const MenuItems = [
+export const menuItems = [
 {
-  Title: "Home",
+  title: "Home",
   url: "#",
 },
 {
-  Title: "TV Shows",
+  title: "TV Shows",
   url: "#",
 },
 {
-  Title: "Movies",
+  title: "Movies",
   url: "#",
 }
 ];
