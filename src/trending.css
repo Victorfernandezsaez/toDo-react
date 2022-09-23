@@ -1,3 +1,51 @@
-.card-title{
-    margin-bottom: 15px;
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.white-text {
+    color: white;
+    text-align: left;
+}
+
+.netflix-row {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 5px;
+    overflow-x: hidden;
+}
+
+.slider-item {
+    width: 249px;
+    height: 138px;
+}
+
+.slider-item img {
+    border-radius: 5px;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.500);
+    scroll-behavior: smooth;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.arrow:hover {
+    color: rgb(255, 255, 255);
+}
+
+.margin_top {
+    margin-top: 40px;
 }
