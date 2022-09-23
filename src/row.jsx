@@ -12,16 +12,16 @@ export default function Row({ name, cards }) {
   ));
 
   const handlePrevBtnClick = () => {
-    htmlRowRef.current.scrollLeft -= 100
+    htmlRowRef.current.scrollLeft -= window.innerWidth - 100
   };
 
   const handleNextBtnClick = () => {
-    htmlRowRef.current.scrollLeft += 100
+    htmlRowRef.current.scrollLeft += window.innerWidth - 100
   };
 
   return (
     <>
-      <h2 className="white-text">{name}</h2>
+      <h2 className="white-text margin-botom">{name}</h2>
 
       <div
         ref={htmlRowRef}

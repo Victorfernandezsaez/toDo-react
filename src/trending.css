@@ -12,12 +12,24 @@ body {
     display: flex;
     margin-bottom: 50px;
     gap: 5px;
-    overflow-x: hidden;
 }
 
 .slider-item {
     width: 249px;
     height: 138px;
+    transition: transform 300ms ease 100ms;
+}
+
+.netflix-row:hover .slider-item {
+    transform: translateX(-25%);
+}
+
+.slider-item:hover~.slider-item {
+    transform: translateX(25%);
+}
+
+.slider-item:hover {
+    transform: scale(1.5) !important;
 }
 
 .slider-item img {
@@ -28,14 +40,13 @@ body {
     position: absolute;
     margin-top: 2%;
     cursor: pointer;
-    border-radius: 50%;
     font-size: 50px;
-    color: rgba(255, 255, 255, 0.500);
-    scroll-behavior: smooth;
+    color: rgba(255, 255, 255, 0.5);
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    z-index: 4;
 }
 
 .arrow-right {
@@ -48,4 +59,8 @@ body {
 
 .margin_top {
     margin-top: 40px;
+}
+
+.margin-botom {
+    margin-bottom: 20px;
 }
