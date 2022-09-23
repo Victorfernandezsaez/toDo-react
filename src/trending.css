@@ -1,3 +1,66 @@
-.card-title{
-    margin-bottom: 15px;
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.white-text {
+    color: white;
+    text-align: left;
+}
+
+.netflix-row {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 5px;
+}
+
+.slider-item {
+    width: 249px;
+    height: 138px;
+    transition: transform 300ms ease 100ms;
+}
+
+.netflix-row:hover .slider-item {
+    transform: translateX(-25%);
+}
+
+.slider-item:hover~.slider-item {
+    transform: translateX(25%);
+}
+
+.slider-item:hover {
+    transform: scale(1.5) !important;
+}
+
+.slider-item img {
+    border-radius: 5px;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 2%;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    z-index: 4;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+.arrow:hover {
+    color: rgb(255, 255, 255);
+}
+
+.margin_top {
+    margin-top: 40px;
+}
+
+.margin-botom {
+    margin-bottom: 20px;
 }
